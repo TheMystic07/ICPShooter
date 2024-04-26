@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "ICPShooter_backend": {
+      "main": "src/ICPShooter_backend/main.mo",
+      "type": "motoko"
+    },
+    "ICPShooter_frontend": {
+      "dependencies": [
+        "ICPShooter_backend"
+      ],
+      "source": [
+        "src/ICPShooter_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "ICPShooter_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
